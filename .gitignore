@@ -2,3 +2,6 @@
 node_modules/
 
 # Other entries...
+
+#Ques : how to remove node modules from git as after adding it git add ?
+#Ans :  git rm -r --cached node_modules
