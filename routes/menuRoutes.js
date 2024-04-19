@@ -18,7 +18,7 @@ router.get('/menu' , async(req ,res)=>{
     
   
    }) ;
-   router.post('/'  , async (req ,res) =>{
+   router.post('/menu'  , async (req ,res) =>{
     try{
         const data = req.body ; 
 

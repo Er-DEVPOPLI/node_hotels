@@ -12,6 +12,7 @@ const bodyParser = require('body-parser');
 const task = require('./models/task') ;
 
 app.use(bodyParser.json());
+require('dotenv').config() ; 
 
  // const Person = required('./models/person');
 
@@ -120,7 +121,10 @@ const menuItemRoutes = require('./routes/menuRoutes') ;
  app.use('/' , personRoutes) ; 
 app.use('/' ,menuItemRoutes ) ;
 
+const PORT = process.env.PORT || 3000 ; 
 
-app.listen(process.env.PORT||412 , ()=> {
+app.listen(PORT , ()=> {
     console.log("Server is running on port 412 ") ; 
 }) ; 
+
+

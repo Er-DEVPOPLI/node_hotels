@@ -2,7 +2,6 @@
 
 // m GITHUB sikh rha hu 
 
-
 const express = require('express') ; 
 const router = express.Router() ; 
 
@@ -22,7 +21,8 @@ const oerson = require('./../models/oerson');
 //     }
 // })
 
-router.post('/', async (req ,res)=>{
+
+router.post('/person', async (req ,res)=>{
       
     try{
  
@@ -48,7 +48,7 @@ router.post('/', async (req ,res)=>{
 
   })
 
-  router.get('/person', async (req ,res)=>{
+  router.get('/persony', async (req ,res)=>{
     try{
        const data = await oerson.find() ;
        console.log("data fetched ") ;
